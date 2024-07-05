@@ -57,7 +57,10 @@ Ces fichiers composent mon projet de gestion des étudiants. N'hésitez pas à e
 
 Le site est déployé sur GitHub Pages et est accessible à l'adresse suivante :
 
-[https://ARTISTEwiame.github.io/GestionEcole](https://ARTISTEwiam.github.io/GestionEcole)
+github.com/ARTISTEwiame/GestionEcole.git
+
+[https://github.com/ARTISTEwiame/GestionEcole.git](https://github.com/ARTISTEwiame/GestionEcole.git)
+
 
 ## Instructions pour Cloner le Projet
 
