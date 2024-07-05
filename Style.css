@@ -1,0 +1,180 @@
+div {
+    background-image: linear-gradient(to right, #ffe9ad, #c2ebfc); 
+    padding: 50px;
+    text-align: center;
+}
+h1 {
+    color:rgb(19, 11, 0); 
+    font-family: Calibri, sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+label {
+    font-size: 20px;
+}
+
+/* cette div pour le Fond d'écran de Page : Acceuil */
+.FondAcceuil { 
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-image: url('images/GestionEcole.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.IconAcceuil {
+    background-image: linear-gradient(to right, #fff4d6, #ffffff); 
+    padding: 40px;
+    transition: opacity 0.3s ease-in-out;
+} 
+.IconAcceuil img:hover, .IconAcceuil img:active {
+    opacity: 0.5;
+    filter: brightness(1.5); 
+}
+
+#imgback {
+    padding: 0px;
+    width: 100px;
+    height: 100px;
+    transition: opacity 0.3s ease-in-out;
+}
+#imgback img:hover, #imgback img:active {
+    opacity: 0.5;
+    filter: brightness(1.5); 
+}
+#Droiteimg {
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+
+body {
+    font-family: Calibri, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-image: url('images/GestionEcole.jpg');
+
+}
+.FormAjouter, .FormModifier, .FormImage {
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px 4px rgba(255, 165, 0, 0.7);
+}
+
+.FormAjouter, .FormModifier {
+    flex: 2;
+    margin-right: 10px;
+}
+
+.FormImage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form { 
+    width: 100%;
+    margin: 20px 20px;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-end: 1em;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Calibri, sans-serif;
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+th {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;  
+}
+
+.ModEtud {
+    padding: 20px;
+    text-align: center;
+}
+
+.ModifierForm {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+}
+
+#Addimg, #Affimg {
+    width: 150px;
+    height: 150px;
+    margin-right: 100px;
+}
+#Affimg {
+    margin-left: 100px;
+}   
+
+#imgPreview {
+    max-width: 150px;
+    max-height: 150px;
+    background-color: rgb(253, 247, 239);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+span {
+    float: left;
+}
+
+/* Styles pour les champs de saisie */
+input[type="text"], input[type="date"], input[type="file"]  {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+button, input[type="submit"], input[type="reset"] {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #007006;
+}
+.tdcent {
+    text-align: center;
+}
+
+#icon {
+    width: 35px;
+    height: 35px;
+    border: 0px;
+}

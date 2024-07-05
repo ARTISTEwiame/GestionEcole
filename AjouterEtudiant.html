@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title> Formulaire d'inscription </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <script>
+        function validateForm() {
+            var nom = document.forms["myForm"]["nom"].value;
+            var prenom = document.forms["myForm"]["prenom"].value;
+            if (nom == "" || prenom == "") {
+                alert("Nom et Prénom doivent être remplis");
+                return false;
+            }
+        }
+        
+        function previewImage(input) {
+            var preview = document.querySelector('#imgPreview');
+            var file = input.files[0];
+            var reader = new FileReader();
+
+            reader.onloadend = function () {
+                preview.src = reader.result;
+            }
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "";
+            }
+        }
+    </script>
+
+    <div>
+        <span>
+            <a href="Acceuil.html">
+                <img id="imgback" src="images/precedante.png" />
+            </a>
+        </span>
+
+        <img id="Droiteimg" src="images/inscription.png" />
+
+        <h1> Formulaire d'inscription d'un étudiant </h1>
+    </div>
+
+    <form name="myForm" method="post" action="traitement.php" onsubmit="return validateForm()"
+        enctype="multipart/form-data">
+        <div class="container">
+            <div class="FormAjouter">
+                <table>
+                    <tr>
+                        <td> Nom : </td>
+                        <td> <input type="text" name="nom"> </td>
+                    </tr>
+                    <tr>
+                        <td> Prénom : </td>
+                        <td> <input type="text" name="prenom"> </td>
+                    </tr>
+                    <tr>
+                        <td> Date Naissance : </td>
+                        <td> <input type="date" name="datenais"> </td>
+                    </tr>
+                    <tr>
+                        <td> Adresse : </td>
+                        <td> <input type="text" name="adr"> </td>
+                    </tr>
+                    <tr>
+                        <td> Filière : </td>
+                        <td> <input type="text" name="fil"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <input type="submit" value="Ajouter" /></td>
+                        <td colspan="2"> <input type="reset" value="Annuler" /></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="FormImage">
+                <label for="image">Image:</label>
+                <input type="file" name="img" onchange="previewImage(this)" />
+                <img id="imgPreview" src="">
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
